@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.about img {
+    width: 400px;
+    height: auto;
+}
+header {
+    background: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px; 
+    position: relative;
+}
+
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #be3904;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #971d1d;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover::after {
+    width: 100%; /* linija se animira ispod linka */
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fcfbfb;
+    color: #854a08;
+}
+
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+main .hero {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+main .hero a {
+    display: inline-block;
+    background-color: #be3904;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 10px 25px;
+
+}
+main .hero a:hover {
+    color: #854a08;        
+    transform: scale(1.1);
+}
+
+main .about {
+    background: linear-gradient(90deg, rgba(228, 55, 12, 0.945) 31%, rgb(255, 170, 155) 77%);
+    display: flex;
+    gap: 50px;
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin:20px;
+    border-radius: 20px;
+}
+main .about img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 400px;
+    margin-right: 20px;
+}
+main .about .about-text {
+    line-height: 1.5;
+    text-align: left;
+    font-size: 35px;
+    color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+}
+main .about .about-text a {
+    display: inline-block;
+    background-color: wheat;
+    color: rgb(17, 15, 8);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 25px;
+    transition: all 0.3s ease-in-out;
+}
+main .about .about-text a:hover {
+    transform: scale(1.1);
+    color: #854a08;
+}
+
+
+
+
+
+
